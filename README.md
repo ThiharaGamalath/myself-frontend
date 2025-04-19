@@ -3,6 +3,8 @@
 This is the **frontend** of my personal portfolio website, built with **React.js** and **Tailwind CSS**.  
 It highlights my skills, passion for technology, and how you can reach out to me 💻🌈
 
+🔗 **Live Demo:** [gihini-dev.vercel.app](https://gihini-dev.vercel.app)
+
 ---
 
 ## 🌟 Features
@@ -23,9 +25,6 @@ It highlights my skills, passion for technology, and how you can reach out to me
 
 ---
 
-
----
-
 ## 🚀 Getting Started Locally
 
 ```bash
@@ -40,5 +39,3 @@ npm install
 
 # 4. Start the development server
 npm start
-
-
