@@ -3,16 +3,10 @@ import { motion } from "framer-motion";
 import img5ab from "../assets/5ab.jpg";
 import img4ab from "../assets/4ab.jpg";
 import img3ab from "../assets/3ab.jpg";
-import img2ab from "../assets/2ab.jpg";
 
 const Projects = () => {
   const projectData = [
-    {
-      title: "Student Management System",
-      desc: "A web-based system for managing student records at ITUM.",
-      link: "https://github.com/ThiharaGamalath/pawsup-website.git",
-      image: img2ab,
-    },
+    
     {
       title: "Pet Care Website",
       desc: "A website designed for pet care services and information.",
