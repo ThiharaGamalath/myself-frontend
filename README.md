@@ -3,16 +3,16 @@
 This is the **frontend** of my personal portfolio website, built with **React.js** and **Tailwind CSS**.  
 It highlights my skills, passion for technology, and how you can reach out to me 💻🌈
 
-🔗 **Live Demo:** [gihini-dev.vercel.app](https://gihini-dev.vercel.app)
+🔗 **Live Demo:** [gihini-dev.vercel.app](https://myself-frontend.vercel.app)
 
 ---
 
 ## 🌟 Features
 
-- Sleek and modern responsive design
-- Sections: Home, About, Projects, Skills, Contact
-- Contact form (Google Form or custom backend)
-- Smooth animations and icons
+- ✨ Sleek and modern responsive design
+- 🧩 Sections: Home, About, Projects, Skills, Contact
+- 📬 Contact form (Google Form or custom backend)
+- 💫 Smooth animations and icons
 
 ---
 
