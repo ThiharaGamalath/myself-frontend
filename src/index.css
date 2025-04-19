@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles for hiding the default cursor */
+body {
+  cursor: none;
+  overflow-x: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Custom Cursor */
+.cursor {
+  position: fixed;
+  width: 12px; /* Slightly larger cursor */
+  height: 12px;
+  background-color: rgba(0, 136, 255, 0.8); /* Subtle blue */
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, width 0.3s ease, height 0.3s ease;
+  will-change: transform, background-color, box-shadow;
+}
+
+/* Custom Cursor Dot Trail */
+.cursor-trail {
+  position: fixed;
+  width: 6px; /* Slightly larger trail */
+  height: 6px;
+  background-color: rgba(0, 136, 255, 0.6); /* Faded blue */
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+  animation: trailAnimation 1s forwards;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Animation for the trailing dot */
+@keyframes trailAnimation {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+}
+
+/* Optional: Slightly larger effect on hoverable elements */
+a:hover,
+button:hover,
+.hoverable:hover {
+  cursor: none;
+}
+
+/* When hovering over elements, make the cursor grow */
+a:hover .cursor,
+button:hover .cursor,
+.hoverable:hover .cursor {
+  transform: scale(1.5); /* Increased scale on hover */
+  background-color: #00d9ff; /* Glow effect on hover */
+  box-shadow: 0 0 30px rgba(0, 217, 255, 0.6); /* Glowing effect */
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Smooth transition for the cursor size and color change on hover */
+a:hover .cursor,
+button:hover .cursor,
+.hoverable:hover .cursor {
+  background-color: #00c4ff; /* Lighter blue glow on hover */
+  width: 18px; /* Slightly larger cursor size on hover */
+  height: 18px;
+}
+
+/* Smooth transition for the dot trail's movement and fading effect */
+.cursor-trail {
+  animation: trailAnimation 0.8s ease-out forwards; /* Adjusted speed */
+}
